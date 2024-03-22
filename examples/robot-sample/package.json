@@ -1,0 +1,35 @@
+{
+  "name": "omelox-example-robot",
+  "version": "3.0.6",
+  "private": false,
+  "description": "A distributed load test framework",
+  "repository": {
+    "type": "git",
+    "url": "https://gitee.com/gamingcity/omelox"
+  },
+  "engines": {
+    "node": ">=8.5"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "yarn run build && cd dist &&  node app",
+    "test": "yarn run build",
+    "cov": "nyc mocha",
+    "ci": "yarn run test",
+    "gen-api-ref": "node ../../node_modules/typedoc/bin/typedoc --mode file --hideGenerator --excludeExternals --ignoreCompilerErrors --out ../../run/site/public/api-reference/omelox-loader lib/"
+  },
+  "dependencies": {
+    "@types/node": "8.10.54",
+    "@types/ws": "^3.2.0",
+    "cli-color": "^2.0.0",
+    "omelox-protobuf": "^3.0.6",
+    "omelox-protocol": "^3.0.6",
+    "omelox-robot": "^3.0.6",
+    "ws": "^3.2.0"
+  },
+  "devDependencies": {
+    "tslint": "^5.14.0",
+    "typescript": "3.7.3"
+  },
+  "gitHead": "a43027c1b3d9c941810d48b18f638baf2ea25719"
+}

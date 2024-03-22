@@ -1,0 +1,6 @@
+{
+  "name": "omelox-client",
+  "description": "omelox-client",
+  "local": [ "boot" ],
+  "paths": [ "local"]
+}
